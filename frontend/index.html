@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acortador de Enlaces AWS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Acortador de Enlaces Cloud</h1>
+        <form id="shorten-form">
+            <input type="url" id="original-url" placeholder="Pega tu enlace largo aquí (ej: https://example.com)" required>
+            <button type="submit">Acortar Enlace</button>
+        </form>
+        
+        <div id="result" class="hidden">
+            <p>¡Enlace acortado con éxito!</p>
+            <input type="text" id="short-url-output" readonly>
+            <button id="copy-btn">Copiar Enlace</button>
+        </div>
+
+        <div id="error-msg" class="hidden error"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
